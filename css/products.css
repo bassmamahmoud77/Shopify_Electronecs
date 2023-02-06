@@ -1,0 +1,148 @@
+.product-page {
+  padding: 20px;
+}
+
+.product-page .img-container {
+  border: 1px solid #e3e0e0;
+  margin-right: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.product-page .img-container img {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+.product-page .stars {
+  color: #ccc;
+}
+
+.product-page .price span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product-page .wishlist {
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product-page .stock p span {
+  color: #da1f3e;
+  -webkit-animation: opactiy 1s infinite;
+  animation: opactiy 1s infinite;
+}
+
+.product-page .count h5 {
+  color: #666;
+}
+
+.product-page .count .counter {
+  border: 1px solid #e3e0e0;
+  width: 150px;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 30px;
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.product-page .count .counter .minus {
+  border-right: 1px solid #e3e0e0;
+  padding: 8px 0;
+  padding: 8px 20px 8px 0;
+}
+
+.product-page .count .counter .plus {
+  border-left: 1px solid #e3e0e0;
+  padding: 8px 0 8px 20px;
+}
+
+.product-page .count .counter .num {
+  padding: 5px;
+}
+
+.product-page .buttons {
+  margin-bottom: 20px;
+}
+
+.product-page .buttons .add-cart a {
+  color: black;
+}
+
+.product-page .buttons .add-cart a:hover {
+  color: white;
+}
+
+.product-page .buttons .buy-now {
+  background-color: #da1f3e;
+}
+
+.product-page .buttons .buy-now a {
+  color: white;
+}
+
+.product-page .buttons .buy-now a:hover {
+  color: black;
+}
+
+.product-page .buttons .buy-now:hover {
+  background-color: #FFDE26;
+}
+
+.product-page .buttons button {
+  width: 49%;
+  font-size: 15px;
+}
+
+.product-page .row {
+  border: 1px solid #e3e0e0;
+  padding: 20px 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product-page .row .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-page .row .column img {
+  width: 30px;
+  height: 30px;
+  margin: auto 10px;
+}
+
+.product-page .row .column .text h5 {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.product-page .row .column .text span {
+  font-size: 12px;
+  width: 100%;
+}
+
+.product-page .brand {
+  margin-bottom: 20px;
+}
+
+.product-page .social svg {
+  color: #666;
+  font-size: 20px;
+}

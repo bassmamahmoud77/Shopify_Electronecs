@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon_32x32.png">
+  <title>Shopify</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" >
+</head>
+<body>
+  <span class="up"><i class="fa-solid fa-chevron-down"></i>
+  </span>
+  <header>
+    <div class="header p-5 pt-3">
+      <div class="contanier d-flex  justify-content-lg-between justify-content-center">
+        <div class="contact d-flex 	d-none d-lg-flex">
+          <h5 class="me-3 ">Call Us: <span>+00 900 123456789</span></h5>
+          <h5>Email Us: <span>info@gmail.com</span></h5>
+        </div>
+        <div class="login">
+          <a href="#" class="me-3">Contant</a>
+          <a href="#" class="account">My Account</a>
+        </div>
+      </div>
+    </div>
+      <div class="login-cart p-3 ">
+        <h3 class="text-center mb-3">Login</h3>
+        <form>
+          <input class=" w-100 pe-3 ps-3 mb-2" type="email" placeholder="Email">
+          <input class=" w-100 pe-3 ps-3" type="password" placeholder="Password">
+        </form>
+        <p class="text-end pt-3">Forgot your password?</p>
+        <button class="btn-shape w-100 fs-6">Sign in</button>
+        <p class="text-center p-2 fs-6">Create account</p>
+        </div>
+      
+      <div class="cart">
+        <div class="head-cart d-flex justify-content-between">
+          <h4>Cart</h4>
+          <span class="close">
+            <i class="fa-solid fa-close"></i>
+          </span>
+        </div>
+        <div class="shipping p-2 w-100 d-flex p-2">
+          <div class="icon-shipping"><i class="fa-solid fa-exclamation"></i>
+          </div>
+          <p class="m-0 d-inline">Spend $25.00 more and get free shipping!</p>
+        </div>
+        <div class="cart-body">
+         <P class="text-center"> Your Cart is currently empty!</P>
+          
+        </div>
+        <div class="cart-footer">
+          <div class="total-container">
+            <h5>Total</h5>
+            <span>$ <span class="total-item">00.00</span></span>
+          </div>
+          <p>Taxes and shipping calculated at checkout</p>
+          <button class="view-cart">
+            <a  href="#">Your Cart</a>
+          </button>
+          <button class="Checkout btn-shape">
+            <a  href="#">Checkout</a>
+          </button>
+        </div>
+      </div>
+      <div class="wishlist-cart">
+        <h2 class="text-center p-2">Wishlist</h2>
+        <span class="close">
+          <i class="fa-solid fa-close"></i>
+        </span>
+        <p class="text-center">Your wishlist is currently empty!</p>
+        <div class="items">
+          <table class="wishlist-table">
+            <thead>
+              <tr>
+                <th>Delete</th>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <nav class="navbar navbar-expand-lg bg-white pe-sm-5 ps-sm-5 ">
+      <div class="container-fluid">
+        <div class=" toggler d-md-block d-lg-none" >
+          <span class="navbar-toggler-icon"></span>
+        </div>
+        <div class="navbar-toggler icon-search border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+        <a class="navbar-brand" href="./index.html">
+          <img src="imgs/Logo_32661e08-8abb-4159-8bc9-2c35eeac6eb4_large.png" alt="">
+        </a>
+        <form class=" search-input d-lg-flex" role="search">
+          <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </form>
+      <div class="icons d-flex justify-content-center align-items-center gap-2">
+        <div class="heart-icon">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <span class="wish-list d-flex justify-content-center align-items-center p-2 "><span>0</span></span>
+        <div class="shopping-bag">
+        <i class="fa-solid fa-bag-shopping "></i>
+        </div>
+        <span >$<span class="total">0.00 </span></span>
+        <span class="total-count d-flex justify-content-center align-items-center p-2 "><span>0</span></span>
+      </div>
+    </div>
+    </nav>
+    <div class="links-nav  d-lg-flex">
+      <div class=" navbar-collapse " id="navbarSupportedContent">
+        <ul class="d-flex  list-unstyled gap-3  me-auto mb-2 mb-lg-0">
+          <div class="close d-md-block d-lg-none">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          
+          <li class="nav-item d-flex">
+            <a class="nav-link  electronics " href="#">Electronics</a>
+            <div class="arrow d-md-block d-lg-none">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="mega-menu w-100 bg-white">
+              <div class="container">
+                <div class="row">
+                  <div class="col-3">
+                    <h4><a href="#">Computer</a></h4>
+
+                  <ul class="list-unstyled">
+                    <li><a href="#">Printers</a></li>
+                    <li><a href="#">Monitors</a></li>
+                    <li><a href="#">Pendrives</a></li>
+                    <li><a href="#">Laptop Bags</a></li>
+                    <li><a href="#">Laptop Covers</a></li>
+                    <li><a href="#">Mouse</a></li>
+                  </ul>
+                  </div>
+                  <div class="col-3">
+                    <h4><a href="#">Mobile</a></h4>
+
+                  <ul class="list-unstyled">
+
+                    <li><a href="#">Wearable Devices</a></li>
+                    <li><a href="#">Smart watches</a></li>
+                    <li><a href="#">Action Camera</a></li>
+                    <li><a href="#">Portable Projectors</a></li>
+                    <li><a href="#">Home Theatres</a></li>
+                    <li><a href="#">Android Mobiles</a></li>
+                  </ul>
+                  </div>
+                  <div class="col-3">
+                    <h4><a href="#">Speaker</a></h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Home Theatres</a></li>
+                    <li><a href="#">Media players</a></li>
+                    <li><a href="#">Action Camera</a></li>
+                    <li><a href="#">Wireless headphone</a></li>
+                    <li><a href="#">Bluetooth Speakers</a></li>
+                    <li><a href="#">Smart Phones</a></li>
+                  </ul>
+                  </div>
+                  <div class="col-3 d-flex align-items-center gap-3">
+                    <img class="img-fluid" src="imgs/MEGATECH_1.jpg" alt="">
+                    <img class="img-fluid" src="imgs/MEGATECH_2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Computer</a>
+            
+          </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="#">Collection</a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="#">Included Pages</a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQs</a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+      
+        </ul>
+        </div>
+        <div class="deals text-nowrap   rounded-pill">
+          <span class="text-uppercase">HotDeals: <span class="text-capitalize">Save Up To 30% Off</span></span>
+        </div>
+    </div>
+  </header>
+  <div class="slider-container">
+    <div class="slide position-relative">
+      <div class="item">
+        <div class="image position-relative overflow-hidden ">
+          <img class="img-fluid hide-mobile" src="imgs/slider1_5e7d04b9-eaf3-4bef-bbf3-83dae1c07976.png" alt="">
+          <img class="img-fluid hide-desktop" src="imgs/slider1.png" alt="">
+          <div class="text-content">
+            <h4>Picture Perfect</h4>
+            <h1><span>imax</span> <br>XI Concepet!</h1>
+            <button class="offer">Save Up To 60% Off On First Order</button>
+            <button class="shop-now text-uppercase">Shop Now</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <div class="slide position-absolute ">
+      <div class="item">
+        <div class="image position-relative overflow-hidden ">
+          <img class="img-fluid hide-mobile" src="imgs/slider2_b76750b5-044b-4fc9-8ecf-94fd46c89bfd.png" alt="">
+          <img class="img-fluid hide-desktop" src="imgs/2_8cc5f6c3-7d0c-499a-83e1-9038462578df.png" alt="">
+          <div class="text-content two">
+            <h4>Picture Perfect</h4>
+            <h1><span>New Max</span> <br>i Watch</h1>
+            <button class="offer">Save Up To 60% Off On First Order</button>
+            <button class="shop-now text-uppercase">Shop Now</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <div class="dots">
+      <div class="dot" onclick="showSlides()"></div>
+      <div class="dot" onclick="showSlides()"></div>
+    </div>
+  </div>
+  <main>
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="service col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <i class="fa-solid fa-truck"></i>
+            <h4>Shipping Free</h4>
+            <p>Lorem Ipsum is simple</p>
+          </div>
+          <div class="service col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <i class="fa-solid fa-headphones-simple"></i>
+            <h4>Monkey Back</h4>
+            <p>Lorem Ipsum is simple</p>
+          </div>
+          <div class="service col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <i class="fa-solid fa-piggy-bank"></i>
+            <h4>Big Saving</h4>
+            <p>Lorem Ipsum is simple</p>
+          </div>
+          <div class="service col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <i class="fa-regular fa-credit-card"></i>
+            <h4>Easy Pyment</h4>
+            <p>Lorem Ipsum is simple</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products mt-5 mb-5">
+      
+      <div class="container">
+        <h2 class="main-title">Trending Products</h2>
+        <div class="feature-product">
+          <ul class="list-unstyled d-flex justify-content-center align-items-center gap-3">
+            <li class="active" data-cat=".feat">Featured</li>
+            <li data-cat=".arr">New Arrivals</li>
+            <li data-cat=".best">Best Sellers</li>
+          </ul>
+        </div>
+        <div class="product-items pt-5">
+          <div class="row">
+            
+            </div>
+            <div class="show-product">
+              <span class="close">
+                <i class="fa-solid fa-close"></i>
+              </span>
+              <div class="container">
+                <div class="row-col d-flex gap-3">
+                  <!-- <div class="column col-lg-6 col-md-6 col-sm-6">
+                    <div class="img-container">
+                      <img src="imgs/product-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="column col-lg-6 col-md-6 col-sm-6">
+                    <div class="info">
+                      <h2>Cradle Bluetooth</h2>
+                      <div class="price">$28.00</div>
+                      <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer!</p>
+                    </div>
+                  </div> -->
+                </div>
+                </div>
+              </div>
+          </div>
+          <button class="view btn-shape" >View All</button>
+
+        </div>
+      </div>
+    <div class="banners">
+      <div class="container">
+        <div class="row">
+          <div class="one mb-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-container">
+              <img class="img-fluid" src="imgs/banner1_ce7c225e-a3db-4cb6-a437-8c790a58c233.png" alt="">
+            </div>
+            <div class="banner-text">
+              <h2>Headphone</h2>
+              <span>Save up to 40% off</span>
+              <button class="btn-shape">Shop Now</button>
+            </div>
+          </div>
+          <div class="two col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-container">
+              <img class="img-fluid" src="imgs/banner2_f1116c57-d53f-4436-a1c3-737946d5d69b.png" alt="">
+            </div>
+            <div class="banner-text">
+              <h2>New Watches</h2>
+              <span>Save up to 40% off</span>
+              <button class="btn-shape">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="categories pt-5">
+        <div class="container">
+          <h2 class="main-title">Our Categories</h2>
+          <div class="row">
+            <div class="categorey col-lg-3 col-md-4 col-sm-6">
+              <div class="img-container">
+                <img src="imgs/category1_30c058dc-6c70-4133-bfdb-5a7ade057473.png" alt="" class="img-fluid">
+              </div>
+              <div class="heading">
+                <h5>Headphones</h5>
+              </div>
+            </div>
+            <div class="categorey col-lg-3 col-md-6 col-sm-6">
+              <div class="img-container">
+                <img src="imgs/category3.png" alt="" class="img-fluid">
+              </div>
+              <div class="heading">
+                <h5>Controller</h5>
+              </div>
+            </div>
+            <div class="categorey col-lg-3 col-md-6 col-sm-6">
+              <div class="img-container">
+                <img src="imgs/category4.png" alt="" class="img-fluid">
+              </div>
+              <div class="heading">
+                <h5>Watches</h5>
+              </div>
+            </div>
+            <div class="categorey col-lg-3 col-md-6 col-sm-6">
+              <div class="img-container">
+                <img src="imgs/category6.png" alt="" class="img-fluid">
+              </div>
+              <div class="heading">
+                <h5>Airpodes</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="content">
+          <div class="row">
+            <div class=" column col-md-6 col-sm-12 col-xs-12 ">
+              <div class="info">
+                <h1>Headphone</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <button class="btn-shape">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="special-deal mt-5 mb-5 position-relative">
+        <div class="container">
+          <h2 class="main-title text-uppercase ">Special Deal</h2>
+          <div class="product-items">
+          <div class="row flex-nowrap position-relative">
+          
+          </div>
+          
+        </div>
+          <div class="product-items">
+          <div class="row flex-nowrap position-md-absolute d-sm-block d-md-none ">
+          
+          </div>
+          
+        </div>
+        <div class="dots">
+          <span class="dot"><i class="fa-solid fa-chevron-left"></i></span>
+          <span class="dot" ><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+      </div>
+      </div>
+      <div class="rated-products pt-5 pb-5">
+        <div class="container">
+          <h2 class="main-title ">Best Rated Products</h2>
+          <div class="product-items">
+          <div class="row flex-nowrap">
+          
+          </div>
+          
+        </div>
+          <div class="product-items d-none">
+          <div class="row flex-nowrap">
+          
+          </div>
+          
+        </div>
+          <div class="product-items d-none">
+          <div class="row flex-nowrap">
+          
+          </div>
+          
+        </div>
+        <div class="dots">
+          <span class="dot"><i class="fa-solid fa-chevron-left"></i></span>
+          <span class="dot" ><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+      </div>
+      </div>
+      <div class="brands pt-5 pb-5 mt-5">
+        <div class="container">
+          <div class="slider-brands position-relative">
+            <div class="img-container position-relative">
+              <img src="imgs/1.png" alt="">
+              <img src="imgs/2.png" alt="">
+              <img src="imgs/3.png" alt="">
+              <img src="imgs/4.png" alt="">
+              <img src="imgs/5.png" alt="">
+              <img src="imgs/1.png" alt="">
+              <img src="imgs/2.png" alt="">
+              <img src="imgs/3.png" alt="">
+              <img src="imgs/4.png" alt="">
+              <img src="imgs/5.png" alt="">
+            </div>
+            <div class="img-container position-absolute top-0 left-0 d-none">
+              <img src="imgs/1.png" alt="">
+              <img src="imgs/2.png" alt="">
+              <img src="imgs/3.png" alt="">
+              <img src="imgs/4.png" alt="">
+              <img src="imgs/5.png" alt="">
+            </div>
+            <div class="dots">
+              <span class="dot"><i class="fa-solid fa-chevron-left"></i></span>
+              <span class="dot" ><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="latest-blog mt-5 mb-5">
+        <div class="container">
+          <h2 class="main-title ">Our Latest Blog</h2>
+        <div class="row  d-flex flex-nowrap">
+          <div class="box col-12">
+            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+              <div class="item">
+                <div class="img-container">
+                  <a href="#">
+                    <img src="imgs/blog1.png" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <span>07 <br> April</span>
+                  <h4>Upon Of Seasons Earth</h4>
+                  <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit....</p>
+                </div>
+                <div class="foot">
+                  <a href="#">
+                    <button class="btn-shape">Read More</button>
+                  </a>
+                  <a href="#">
+                    <div class="comments">
+                      <i class="fa-solid fa-comment"></i>
+                      <span>0</span>
+                      <span>Comments</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+              <div class="img-container">
+                <a href="#">
+                  <img src="imgs/blog2.png" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <span>07 <br> April</span>
+                <h4>Sclerisque Vestibulum Urna</h4>
+                <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit....</p>
+              </div>
+              <div class="foot">
+                <a href="#">
+                  <button class="btn-shape">Read More</button>
+                </a>
+                <a href="#">
+                  <div class="comments">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>0</span>
+                    <span>Comments</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box col-12">
+            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+              <div class="img-container">
+                <a href="#">
+                  <img src="imgs/blog4.png" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <span>07 <br> April</span>
+                <h4>Nec intellegat Deseruisse To</h4>
+                <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit....</p>
+              </div>
+              <div class="foot">
+                <a href="#">
+                  <button class="btn-shape">Read More</button>
+                </a>
+                <a href="#">
+                  <div class="comments">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>0</span>
+                    <span>Comments</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+              <div class="img-container">
+                <a href="#">
+                  <img src="imgs/blog5.png" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <span>07 <br> April</span>
+                <h4>Upon Of Seasons Earth Dominion</h4>
+                <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit....</p>
+              </div>
+              <div class="foot">
+                <a href="#">
+                  <button class="btn-shape">Read More</button>
+                </a>
+                <a href="#">
+                  <div class="comments">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>0</span>
+                    <span>Comments</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box col-12">
+            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+              <div class="img-container">
+                <a href="#">
+                  <img src="imgs/blog6.png" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <span>07 <br> April</span>
+                <h4>Christmas Sale Is Here 7</h4>
+                <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit....</p>
+              </div>
+              <div class="foot">
+                <a href="#">
+                  <button class="btn-shape">Read More</button>
+                </a>
+                <a href="#">
+                  <div class="comments">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>0</span>
+                    <span>Comments</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+              <div class="img-container">
+                <a href="#">
+                  <img src="imgs/blog3.png" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <span>07 <br> April</span>
+                <h4>Nostro Expetenda Voluptatum...</h4>
+                <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit....</p>
+              </div>
+              <div class="foot">
+                <a href="#">
+                  <button class="btn-shape">Read More</button>
+                </a>
+                <a href="#">
+                  <div class="comments">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>0</span>
+                    <span>Comments</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+          </div>
+          <div class="dots">
+            <span class="dot"><i class="fa-solid fa-chevron-left"></i></span>
+            <span class="dot" ><i class="fa-solid fa-chevron-right"></i></span>
+          
+        </div>
+      </div>
+  </main>
+  <footer>
+    <div class="sign-in text-center">
+      <div class="container">
+        <div class="row">
+          <div class="head col-lg-4 col-md-12 col-sm-12">
+            <h3><i class="fa-regular fa-envelope"></i>
+              Sign Up For Newsletter</h3>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et.</p>
+          </div>
+          <div class="input col-lg-4 col-md-12 col-sm-12">
+            <input type="email" placeholder="Your email">
+            <button class="btn-shape">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column-one col-lg-3 col-md-12">
+            <img src="imgs/footer-logo_large.png" alt="">
+            <p>
+              Imaxstore Sectioned Shopify Theme
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+              
+              </p>
+              <div class="icons">
+                <div class="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="insta"><i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="tiktok"><i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="snap">
+                  <i class="fa-brands fa-snapchat"></i>
+                </div>
+                <div class="vimeo"><i class="fa-brands fa-vimeo-v"></i>
+                </div>
+              </div>
+          </div>
+          <div class="column-two col-lg-3 col-md-12">
+            <div class="heading">
+              <h5>Your Account</h5>
+              <div class="arrow d-md-block d-lg-none" data-id="1">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <ul  data-id="1">
+              <li><a href="#">Personal Info</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Credit Slips</a></li>
+              <li><a href="#">Addresses</a></li>
+              <li><a href="#">My Wishlists</a></li>
+            </ul>
+          </div>
+          <div class="column-three col-lg-3 col-md-12">
+            <div class="heading">
+              <h5>Our Company</h5>
+              <div class="arrow d-md-block d-lg-none"  data-id="2">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>            <ul  data-id="2">
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Secure Payment</a></li>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </div>
+          <div class="contact col-lg-3 col-md-12">
+            <div class="heading">
+              <h5>Contact Information</h5>
+              <div class="arrow d-md-block d-lg-none" data-id="3">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <ul>
+              <li><span class="contact">Contact: <span class="num">+00 900 123456789</span></span></li>
+              <li><span class="locat">Location: <span class="address">4005, Silver business</span>
+              
+              </span></li>
+              <li><span class="email">Email: <span><a href="#">info@gmail.com</a></span></span>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container  d-flex justify-content-between align-items-center">
+        <div class="copyright">
+          <p>© 2023, Megatech Sectioned Shopify Theme</p>
+        </div>
+        <div class="icons >
+          <span><i class="fa-brands fa-apple-pay"></i></span>
+          <span><i class="fa-brands fa-google-pay"></i></span>
+          <span><i class="fa-brands fa-cc-visa"></i></span>
+          <span><i class="fa-brands fa-cc-mastercard"></i></span>
+          <span><i class="fa-brands fa-cc-discover"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="layout"></div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

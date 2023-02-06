@@ -1,0 +1,130 @@
+@import './sass/varebiles';
+.product-page { 
+  padding: 20px;
+  .img-container {
+    border: 1px solid $borderColor;
+    margin-right: 20px;
+    height: fit-content;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center center;
+        }
+  }
+  .stars {
+    color: #ccc;
+  }
+  .price {
+    span {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .wishlist {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+  .stock {
+    p {
+      span {
+        color: $redColor;
+        animation: opactiy 1s infinite ;
+      }
+    }
+  }
+  .count {
+    h5 {
+      color: #666;
+    }
+    .counter {
+      border: 1px solid $borderColor;
+      width: 150px;
+      text-align: center;
+      padding: 8px 12px ;
+      border-radius: 30px;
+      color: #666;
+      margin-bottom: 20px;
+      font-weight: bold;
+      .minus {
+        border-right: 1px solid $borderColor;
+        padding: 8px 0;
+        padding: 8px 20px 8px 0;
+
+      }
+      .plus {
+        border-left: 1px solid $borderColor;
+        padding: 8px 0 8px 20px;
+      }
+      .num {
+        padding: 5px;
+      }
+    }
+  }
+  .buttons {
+    .add-cart {
+      a {
+        color: black;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    .buy-now 
+    {
+      background-color: $redColor;
+      a{
+        color: white;
+        &:hover {
+          color: black;
+        }
+      }
+      &:hover {
+        background-color: $mainColor;
+       
+      }
+    }
+    button {
+      width: 49%;
+      font-size: 15px;
+    }
+    margin-bottom: 20px;
+  }
+  .row {
+    border: 1px solid $borderColor;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      img {
+        width: 30px;
+        height: 30px;
+        margin: auto 10px;
+      }
+      .text {
+        h5 {
+          font-size: 12px;
+          margin-bottom: 0;
+        }
+        span {
+          font-size: 12px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .brand {
+    margin-bottom: 20px;
+  }
+  .social {
+    svg {
+      color: #666;
+      font-size: 20px;
+    }
+  }
+}

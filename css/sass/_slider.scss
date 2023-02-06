@@ -1,0 +1,107 @@
+@import './varebiles';
+.slider-container {
+  position: relative;
+  background-color: black;
+  .slide {
+    transform: translateX(-100%);
+    z-index: 1;
+    transition: transform 1.5s ease-in-out;
+    transition: all 1.5s;
+    width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    .item {
+      .image {
+        .text-content {
+          position: absolute;
+          top: 20px;
+          left: 50px; 
+          transform: translateY(-110%);
+          transition: transform 1s ease-in-out;
+          transition: all 0.5s;
+          @media(max-width: 767px) {
+            top:50px;
+          }
+          h4 {
+            color: $mainColor;
+            font-size: 30px;
+            @media(max-width: 767px) {
+              font-size:20px;
+            }
+          }
+          
+          h1 {
+            font-weight: bold;
+            font-size: 50px;
+            color: white;
+            @media(max-width: 767px) {
+              font-size:25px;
+            }
+          }
+          .offer {
+            display: block;
+            background-color: $redColor;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 30px;
+            margin-bottom: 8px;
+            @media(max-width: 767px) {
+              display: none;
+            }
+          }
+          .shop-now {
+            background-color: $mainColor;
+            border-radius: 30px;
+            padding: 8px 10px;
+            transition: .5s;
+            font-size: 15px;
+            font-weight: bold;
+            &:hover {
+              background-color: $redColor;
+              color: white;
+            }
+            @media(max-width: 991px) {
+              padding:5px 10px;
+            }
+          }
+        }
+        .two {
+          left: 500px;
+          @media(max-width: 767px) {
+            left: 230px;
+          }
+          @media(min-width: 768px) and (max-width: 991px) {
+            left: 400px;
+          }
+        }
+      }
+    }
+  }
+  .dots {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    gap: 5px;
+    @media(max-width: 991px) {
+      top: 265px;
+    }
+    @media(max-width: 767px) {
+      top: 220px;
+    }
+    .dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid $mainColor;
+      transition: background-color 0.6s ease;
+      cursor: pointer;
+      &.active {
+        background-color: $mainColor;
+      }
+    }
+  }
+}
